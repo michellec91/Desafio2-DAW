@@ -1,0 +1,105 @@
+body {
+  background-color: #f7f8fa;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #e9ecf3;
+  padding: 3rem 1rem;
+  border-radius: 0 0 25px 25px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #212529;
+}
+
+.titulo-form {
+  font-weight: 700;    
+  font-size: 1.4rem;    
+  color: #212529;
+}
+
+#saldo-total {
+  font-size: 2.5rem;
+  color: #1c8c3a; 
+  margin-top: 1rem;
+}
+
+.caja {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.caja.ingreso {
+  background-color: #212529;
+  color: #fff;
+}
+
+.caja.egreso {
+  background-color: #fff; 
+  border: 2px solid #212529;
+  color: #212529;
+}
+
+.porcentaje {
+  font-size: 0.95rem;
+  color: #212529;
+}
+
+.porcentaje span {
+  background-color: #212529;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+#btn-ingresos,
+#btn-egresos {
+  flex: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding: 0.6rem 0;
+  transition: all 0.3s ease;
+}
+
+#btn-ingresos {
+  border-radius: 8px 0 0 8px;
+  background-color: #212529;
+  color: #fff;
+}
+
+#btn-egresos {
+  border-radius: 0 8px 8px 0;
+  background-color: #f2f2f2;
+  color: #212529;
+}
+
+#btn-ingresos.active,
+#btn-ingresos:hover {
+  background-color: #212529;
+  color: #fff;
+}
+
+#btn-egresos.active,
+#btn-egresos:hover {
+  background-color: #212529;
+  color: #fff;
+}
+
+.card .d-flex {
+  border: 2px solid #212529;
+  border-radius: 8px;
+  overflow: hidden;
+}
