@@ -103,3 +103,33 @@ header h1 {
   border-radius: 8px;
   overflow: hidden;
 }
+
+/* ===== Bloque de Resumen (Integrante 4 - Lily) ===== */
+
+.resumen-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.6rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.resumen-footer small {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+#btn-limpiar-registros {
+  background-color: #dc3545;
+  border: none;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+#btn-limpiar-registros:hover {
+  background-color: #bb2d3b;
+}
