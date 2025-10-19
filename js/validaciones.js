@@ -1,3 +1,5 @@
+var transacciones = []; // Declarada globalmente
+
 document.addEventListener('DOMContentLoaded', () => {
 
     //Titulo y resumen
@@ -25,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         form.parentNode.insertBefore(mensaje, form.nextSibling);
     }
 
-    var transacciones = []; 
     var datoAingresar = 'ingreso';
 
 //Cambio de fecha en el titulo
@@ -150,6 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             transacciones.push(nuevaTransaccion);
+
+            guardarTransacciones(transacciones);      // Guarda el arreglo actualizado en localStorage.
+            mostrarTransaccionesGuardadas();          // Actualiza la tabla de resumen de transacciones.
 
             formDesc.value = '';
             formCant.value = '';
