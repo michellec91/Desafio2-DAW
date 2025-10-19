@@ -83,17 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
   mostrarTransaccionesGuardadas();
 
   const form = document.getElementById('form-transaccion');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const tipo = document.getElementById('tipo').value;
-    const descripcion = document.getElementById('descripcion').value.trim();
-    const monto = parseFloat(document.getElementById('monto').value);
-
-    if (descripcion && !isNaN(monto) && monto > 0) {
-      agregarTransaccion(tipo, descripcion, monto);
-      form.reset();
-    }
-  });
 
   const limpiarBtn = document.getElementById('btn-limpiar-registros');
   if (limpiarBtn) {
